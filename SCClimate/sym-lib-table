@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name ClimateSprinklerController)(type Legacy)(uri ${KIPRJMOD}/project_components/ClimateSprinklerController.lib)(options "")(descr ""))
+  (lib (name CD-MBL206SL)(type Legacy)(uri ${KIPRJMOD}/project_components/CD-MBL206SL.lib)(options "")(descr ""))
+)

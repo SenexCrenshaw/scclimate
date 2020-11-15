@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ClimateSprinklerController)(type KiCad)(uri ${KIPRJMOD}/ClimateSprinklerController.pretty)(options "")(descr ""))
+  (lib (name project)(type KiCad)(uri ${KIPRJMOD}/project.pretty)(options "")(descr ""))
+)

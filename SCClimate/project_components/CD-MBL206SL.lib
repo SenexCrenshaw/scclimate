@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model CD-MBL206SL
+#/567003/106646/2.47/4/4/Bridge Rectifier
+DEF CD-MBL206SL BR 0 30 Y Y 1 F N
+F0 "BR" 850 300 50 H V L CNN
+F1 "CD-MBL206SL" 850 200 50 H V L CNN
+F2 "CD-MBL210S_1" 850 100 50 H I L CNN
+F3 "http://www.bourns.com/docs/Product-Datasheets/cd-mbl2xxsl.pdf" 850 0 50 H I L CNN
+F4 "BOURNS - CD-MBL206SL - DIODE, BRIDGE RECT, 1-PH, 600V, SMD" 850 -100 50 H I L CNN "Description"
+F5 "" 850 -200 50 H I L CNN "Height"
+F6 "Bourns" 850 -300 50 H I L CNN "Manufacturer_Name"
+F7 "CD-MBL206SL" 850 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "CD-MBL206SL" 850 -500 50 H I L CNN "Arrow Part Number"
+F9 "https://www.arrow.com/en/products/cd-mbl206sl/bourns" 850 -600 50 H I L CNN "Arrow Price/Stock"
+F10 "652-CD-MBL206SL" 850 -700 50 H I L CNN "Mouser Part Number"
+F11 "https://www.mouser.co.uk/ProductDetail/Bourns/CD-MBL206SL?qs=zwwtnr6GuIzJqv3Wfx%252BQoQ%3D%3D" 850 -800 50 H I L CNN "Mouser Price/Stock"
+DRAW
+X + 1 1000 0 200 L 50 50 0 0 P
+X -_1 2 1000 -100 200 L 50 50 0 0 P
+X ~ 3 0 -100 200 R 50 50 0 0 P
+X -_2 4 0 0 200 R 50 50 0 0 P
+P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP CD-MBL206SL
+D BOURNS - CD-MBL206SL - DIODE, BRIDGE RECT, 1-PH, 600V, SMD
+K
+F http://www.bourns.com/docs/Product-Datasheets/cd-mbl2xxsl.pdf
+$ENDCMP
+#
+#End Doc Library
