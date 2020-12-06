@@ -1806,14 +1806,10 @@ F 3 "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-D
 	1    0    0    -1  
 $EndComp
 Connection ~ 6900 4950
-Text Label 3150 7000 2    50   ~ 0
-TRIAC_W
 Wire Wire Line
 	2500 6800 3150 6800
 Wire Wire Line
 	2500 6900 3150 6900
-Wire Wire Line
-	2500 7000 3150 7000
 Text Label 3150 6800 2    50   ~ 0
 TRIAC_G
 Text Label 3150 6900 2    50   ~ 0
@@ -1980,14 +1976,18 @@ Wire Wire Line
 Text Label 3150 6000 0    50   ~ 0
 DISP_RX
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0102
 U 1 1 60CC186B
 P 4850 5450
-F 0 "#PWR?" H 4850 5300 50  0001 C CNN
+F 0 "#PWR0102" H 4850 5300 50  0001 C CNN
 F 1 "+5V" H 4865 5623 50  0000 C CNN
 F 2 "" H 4850 5450 50  0001 C CNN
 F 3 "" H 4850 5450 50  0001 C CNN
 	1    4850 5450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2500 6400 3150 6400
+Text Label 3150 6400 0    50   ~ 0
+TRIAC_W
 $EndSCHEMATC
