@@ -477,7 +477,7 @@ $EndComp
 Text Label 750  3500 0    50   ~ 0
 MODE
 Text Label 3150 6200 2    50   ~ 0
-I2C_SCL
+I2C_SDA
 Wire Wire Line
 	2500 6200 3150 6200
 Wire Wire Line
@@ -1513,7 +1513,7 @@ TRIAC_Y
 Text Label 3150 6900 2    50   ~ 0
 PHOTO
 Text Label 3150 6300 0    50   ~ 0
-I2C_SDA
+I2C_SCL
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5EA64EA8
