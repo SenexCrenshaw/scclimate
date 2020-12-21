@@ -476,18 +476,6 @@ F 3 "" H 1750 3600 50  0001 C CNN
 $EndComp
 Text Label 750  3500 0    50   ~ 0
 MODE
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5FE5A985
-P 1550 3100
-F 0 "SW1" H 1550 3385 50  0000 C CNN
-F 1 "RESET" H 1550 3294 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 1550 3300 50  0001 C CNN
-F 3 "~" H 1550 3300 50  0001 C CNN
-F 4 "PTS645VK582LFS" H 1550 3100 50  0001 C CNN "Part"
-	1    1550 3100
-	-1   0    0    -1  
-$EndComp
 Text Label 3150 6200 2    50   ~ 0
 I2C_SCL
 Wire Wire Line
@@ -903,217 +891,6 @@ Wire Wire Line
 Connection ~ 5950 1250
 Wire Wire Line
 	1650 1200 1450 1200
-Wire Wire Line
-	8350 3600 8350 3850
-Text Label 8350 3850 1    50   ~ 0
-STATUS
-$Comp
-L Device:LED D3
-U 1 1 5F6EFAF9
-P 8350 3450
-F 0 "D3" V 8389 3333 50  0000 R CNN
-F 1 "STATUS" V 8298 3333 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 8350 3450 50  0001 C CNN
-F 3 "~" H 8350 3450 50  0001 C CNN
-F 4 "APTL3216SECK" V 8350 3450 50  0001 C CNN "Part"
-	1    8350 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R15
-U 1 1 5F6EFAEF
-P 8350 3150
-F 0 "R15" H 8280 3104 50  0000 R CNN
-F 1 "120" H 8280 3195 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8280 3150 50  0001 C CNN
-F 3 "~" H 8350 3150 50  0001 C CNN
-F 4 "RT0805FRE07120RL" H 8350 3150 50  0001 C CNN "Part"
-	1    8350 3150
-	1    0    0    -1  
-$EndComp
-Connection ~ 7150 2950
-Wire Wire Line
-	7150 2950 7550 2950
-Wire Wire Line
-	7150 2950 7150 3000
-Wire Wire Line
-	7000 2950 7150 2950
-Wire Wire Line
-	7150 3300 7150 3700
-$Comp
-L power:GND #PWR044
-U 1 1 5F15E6E7
-P 7150 3700
-F 0 "#PWR044" H 7150 3450 50  0001 C CNN
-F 1 "GND" H 7150 3550 50  0000 C CNN
-F 2 "" H 7150 3700 50  0001 C CNN
-F 3 "" H 7150 3700 50  0001 C CNN
-	1    7150 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C12
-U 1 1 5F15E6DD
-P 7150 3150
-F 0 "C12" H 7175 3250 50  0000 L CNN
-F 1 "10 uF" H 7175 3050 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 7188 3000 50  0001 C CNN
-F 3 "https://www.cde.com/resources/catalogs/AFK.pdf" H 7150 3150 50  0001 C CNN
-F 4 "EEE-HP0J100R" H 7150 3150 60  0001 C CNN "Part"
-	1    7150 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 2950 7950 2950
-Wire Wire Line
-	6600 3250 6600 3700
-$Comp
-L power:GND #PWR043
-U 1 1 5ED182A3
-P 6600 3700
-F 0 "#PWR043" H 6600 3450 50  0001 C CNN
-F 1 "GND" H 6600 3550 50  0000 C CNN
-F 2 "" H 6600 3700 50  0001 C CNN
-F 3 "" H 6600 3700 50  0001 C CNN
-	1    6600 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 3300 7550 3700
-Connection ~ 7950 2950
-Wire Wire Line
-	7950 2900 7950 2950
-$Comp
-L power:+3V3 #PWR052
-U 1 1 5EB6380F
-P 7950 2900
-F 0 "#PWR052" H 7950 2750 50  0001 C CNN
-F 1 "+3V3" H 7965 3073 50  0000 C CNN
-F 2 "" H 7950 2900 50  0001 C CNN
-F 3 "" H 7950 2900 50  0001 C CNN
-	1    7950 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7950 2950 7950 3000
-Connection ~ 7550 2950
-Wire Wire Line
-	7550 2950 7550 3000
-Wire Wire Line
-	7950 3600 7950 3700
-$Comp
-L Device:LED D2
-U 1 1 5EA64EC1
-P 7950 3450
-F 0 "D2" V 7989 3333 50  0000 R CNN
-F 1 "3V3" V 7898 3333 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 7950 3450 50  0001 C CNN
-F 3 "~" H 7950 3450 50  0001 C CNN
-F 4 "597-6901-607F" V 7950 3450 50  0001 C CNN "Part"
-	1    7950 3450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R12
-U 1 1 5EA64EBB
-P 7950 3150
-F 0 "R12" H 7880 3104 50  0000 R CNN
-F 1 "1K6" H 7880 3195 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7880 3150 50  0001 C CNN
-F 3 "~" H 7950 3150 50  0001 C CNN
-F 4 "RT0805FRE071K6L" H 7950 3150 50  0001 C CNN "Part"
-	1    7950 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR053
-U 1 1 5F1AC5A9
-P 7950 3700
-F 0 "#PWR053" H 7950 3450 50  0001 C CNN
-F 1 "GND" H 7950 3550 50  0000 C CNN
-F 2 "" H 7950 3700 50  0001 C CNN
-F 3 "" H 7950 3700 50  0001 C CNN
-	1    7950 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR049
-U 1 1 5EA64E79
-P 7550 3700
-F 0 "#PWR049" H 7550 3450 50  0001 C CNN
-F 1 "GND" H 7550 3550 50  0000 C CNN
-F 2 "" H 7550 3700 50  0001 C CNN
-F 3 "" H 7550 3700 50  0001 C CNN
-	1    7550 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C13
-U 1 1 5EA64E6C
-P 7550 3150
-F 0 "C13" H 7575 3250 50  0000 L CNN
-F 1 "220 uF" H 7575 3050 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_8x10" H 7588 3000 50  0001 C CNN
-F 3 "https://www.cde.com/resources/catalogs/AFK.pdf" H 7550 3150 50  0001 C CNN
-F 4 "EEE-HB0J221AP" H 7550 3150 60  0001 C CNN "Part"
-	1    7550 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:LD1086DT33TR U4
-U 1 1 5ECBFEBA
-P 6600 2950
-F 0 "U4" H 6600 3317 50  0000 C CNN
-F 1 "LD1086DT33TR" H 6600 3226 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 6600 3450 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/ld1086.pdf" H 6600 3450 50  0001 C CNN
-F 4 "LD1086DT33TR" H 6600 2950 50  0001 C CNN "Part"
-	1    6600 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP C9
-U 1 1 5EAABE7E
-P 6050 3150
-F 0 "C9" H 6075 3250 50  0000 L CNN
-F 1 "10 uF" H 6075 3050 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.8" H 6088 3000 50  0001 C CNN
-F 3 "https://www.cde.com/resources/catalogs/AFK.pdf" H 6050 3150 50  0001 C CNN
-F 4 "EEE-HP0J100R" H 6050 3150 60  0001 C CNN "Part"
-	1    6050 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR037
-U 1 1 5EAABE89
-P 6050 3700
-F 0 "#PWR037" H 6050 3450 50  0001 C CNN
-F 1 "GND" H 6050 3550 50  0000 C CNN
-F 2 "" H 6050 3700 50  0001 C CNN
-F 3 "" H 6050 3700 50  0001 C CNN
-	1    6050 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6050 2900 6050 2950
-Wire Wire Line
-	6200 2950 6050 2950
-Connection ~ 6050 2950
-Wire Wire Line
-	6050 2950 6050 3000
-Wire Wire Line
-	6050 3700 6050 3300
-$Comp
-L power:+5V #PWR036
-U 1 1 5F577EF7
-P 6050 2900
-F 0 "#PWR036" H 6050 2750 50  0001 C CNN
-F 1 "+5V" H 6065 3073 50  0000 C CNN
-F 2 "" H 6050 2900 50  0001 C CNN
-F 3 "" H 6050 2900 50  0001 C CNN
-	1    6050 2900
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C15
 U 1 1 5EC9B9EC
@@ -1127,7 +904,6 @@ F 4 "GRM32ER61C476KE15L" H 6650 1100 50  0001 C CNN "Part"
 	1    0    0    -1  
 $EndComp
 Connection ~ 5950 900 
-Connection ~ 7100 900 
 Wire Wire Line
 	7100 950  7100 900 
 Wire Wire Line
@@ -1138,12 +914,12 @@ Wire Wire Line
 $Comp
 L power:+5V #PWR059
 U 1 1 5F8E59E4
-P 7100 900
-F 0 "#PWR059" H 7100 750 50  0001 C CNN
-F 1 "+5V" H 7115 1073 50  0000 C CNN
-F 2 "" H 7100 900 50  0001 C CNN
-F 3 "" H 7100 900 50  0001 C CNN
-	1    7100 900 
+P 4000 2700
+F 0 "#PWR059" H 4000 2550 50  0001 C CNN
+F 1 "+5V" H 4015 2873 50  0000 C CNN
+F 2 "" H 4000 2700 50  0001 C CNN
+F 3 "" H 4000 2700 50  0001 C CNN
+	1    4000 2700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1187,10 +963,6 @@ F 3 "" H 3750 4550 50  0001 C CNN
 	1    3750 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8350 3000 8350 2950
-Wire Wire Line
-	8350 2950 7950 2950
 Text Label 4350 7150 2    50   ~ 0
 TRIAC_G
 Text Label 4350 8250 2    50   ~ 0
@@ -1245,38 +1017,10 @@ Text Label 2850 8650 0    50   ~ 0
 PHOTO
 Text Label 3150 6700 2    50   ~ 0
 TRIAC_W
-Text Label 5150 1600 3    50   ~ 0
+Text Label 8400 3800 3    50   ~ 0
 ~ESP_RESET
-$Comp
-L Device:LED D4
-U 1 1 628AEB82
-P 7550 1100
-F 0 "D4" V 7589 983 50  0000 R CNN
-F 1 "5V" V 7498 983 50  0000 R CNN
-F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 7550 1100 50  0001 C CNN
-F 3 "~" H 7550 1100 50  0001 C CNN
-F 4 "597-6901-607F" V 7550 1100 50  0001 C CNN "Part"
-	1    7550 1100
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R16
-U 1 1 628AEB8C
-P 7350 900
-F 0 "R16" H 7280 854 50  0000 R CNN
-F 1 "8K2" H 7280 945 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7280 900 50  0001 C CNN
-F 3 "~" H 7350 900 50  0001 C CNN
-F 4 "RT0805FRE078K2L" H 7350 900 50  0001 C CNN "Part"
-	1    7350 900 
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	7200 900  7100 900 
-Wire Wire Line
-	7500 900  7550 900 
-Wire Wire Line
-	7550 900  7550 950 
+	9800 2450 9800 2500
 Connection ~ 1450 1200
 Wire Wire Line
 	1450 1200 1450 1450
@@ -1408,13 +1152,13 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 JP1
 U 1 1 622024DC
-P 4950 1500
-F 0 "JP1" V 4904 1568 50  0000 L CNN
-F 1 "PG_TO_~RESET" V 4995 1568 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4950 1500 50  0001 C CNN
-F 3 "~" H 4950 1500 50  0001 C CNN
-	1    4950 1500
-	-1   0    0    -1  
+P 8600 3800
+F 0 "JP1" V 8554 3868 50  0000 L CNN
+F 1 "PG_TO_~RESET" V 8645 3868 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8600 3800 50  0001 C CNN
+F 3 "~" H 8600 3800 50  0001 C CNN
+	1    8600 3800
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C2
@@ -1440,7 +1184,7 @@ Wire Wire Line
 Connection ~ 1300 2950
 Text Notes 3800 2050 0    100  ~ 0
 Buck converter
-Text Notes 6600 4050 0    100  ~ 0
+Text Notes 6500 3650 0    100  ~ 0
 3V3 regulation
 Text Notes 5350 10550 0    100  ~ 0
 TRIACs
@@ -1498,18 +1242,6 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4000 3850 50 
 F 3 "~" H 4000 3850 50  0001 C CNN
 	1    4000 3850
 	-1   0    0    1   
-$EndComp
-$Comp
-L Switch:SW_Push SW2
-U 1 1 5FE5B2E4
-P 1550 3500
-F 0 "SW2" H 1550 3785 50  0000 C CNN
-F 1 "MODE" H 1550 3694 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 1550 3700 50  0001 C CNN
-F 3 "~" H 1550 3700 50  0001 C CNN
-F 4 "PTS645VK582LFS" H 1550 3500 50  0001 C CNN "Part"
-	1    1550 3500
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C6
@@ -1586,19 +1318,6 @@ F 3 "" H 7100 1550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 1250 7100 1550
-$Comp
-L power:GND #PWR063
-U 1 1 5F5D9EC4
-P 7550 1550
-F 0 "#PWR063" H 7550 1300 50  0001 C CNN
-F 1 "GND" H 7550 1400 50  0000 C CNN
-F 2 "" H 7550 1550 50  0001 C CNN
-F 3 "" H 7550 1550 50  0001 C CNN
-	1    7550 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 1250 7550 1550
 $Comp
 L Device:R R23
 U 1 1 5F70B1B2
@@ -1692,7 +1411,7 @@ F 4 "APTL3216ZGC" V 4000 7300 50  0001 C CNN "Part"
 	1    4000 7300
 	0    -1   -1   0   
 $EndComp
-Text Notes 8900 4000 0    50   Italic 0
+Text Notes 9300 5200 0    50   Italic 0
 Note about LED series resistors:\n\nSpecified resistance values for\noptotriacs are sufficient for both\n3.3 and 5 volt operation (JP8).\n\nIndicator LEDs use low currents\nto keep them dim, however the\nStatus LED is intentionally bright\nto get attention. The values specified\nare for use with 3.3 volts and should\nbe increased when used with 5 volts.\n\nLED series resistors may be adjusted\nto the builder’s liking; all LEDs can\ntolerate up to 20 mA. The MCP23017\ncan safely source 120 mA max.
 Wire Wire Line
 	3900 1250 3900 1300
@@ -1710,8 +1429,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 1050 5050 1000
 Wire Wire Line
-	5050 1300 5150 1300
-Wire Wire Line
 	5050 1200 5500 1200
 Wire Wire Line
 	5500 1200 5500 1250
@@ -1721,7 +1438,7 @@ U 1 1 6247059E
 P 5250 5750
 F 0 "J7" H 5168 5325 50  0000 C CNN
 F 1 "PIR" H 5168 5416 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 5250 5750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5250 5750 50  0001 C CNN
 F 3 "~" H 5250 5750 50  0001 C CNN
 	1    5250 5750
 	1    0    0    1   
@@ -1745,17 +1462,6 @@ Wire Wire Line
 	4850 5850 4850 5950
 Wire Wire Line
 	4850 5650 4850 5450
-$Comp
-L Connector_Generic:Conn_01x04 J3
-U 1 1 601BE443
-P 5250 4800
-F 0 "J3" H 5168 4375 50  0000 C CNN
-F 1 "DISP_SERIAL" H 5168 4466 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5250 4800 50  0001 C CNN
-F 3 "~" H 5250 4800 50  0001 C CNN
-	1    5250 4800
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5050 4600 4900 4600
 Wire Wire Line
@@ -1836,10 +1542,6 @@ F 3 "" H 2850 8950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5050 4800 4900 4800
-Text Label 4900 4800 0    50   ~ 0
-DISP_RX
-Text Label 4900 4700 0    50   ~ 0
-DISP_TX
 Wire Wire Line
 	2500 6300 3150 6300
 Text Label 1400 8300 0    50   ~ 0
@@ -1886,7 +1588,7 @@ L Device:R R9
 U 1 1 625E556E
 P 2850 8800
 F 0 "R9" H 2780 8754 50  0000 R CNN
-F 1 "10K" H 2780 8845 50  0000 R CNN
+F 1 "4K" H 2780 8845 50  0000 R CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2780 8800 50  0001 C CNN
 F 3 "~" H 2850 8800 50  0001 C CNN
 F 4 "RC0805FR-07100KL" H 2850 8800 50  0001 C CNN "Part"
@@ -1896,12 +1598,12 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 602B12AB
-P 2850 7850
-F 0 "#PWR0105" H 2850 7700 50  0001 C CNN
-F 1 "+3.3V" H 2865 8023 50  0000 C CNN
-F 2 "" H 2850 7850 50  0001 C CNN
-F 3 "" H 2850 7850 50  0001 C CNN
-	1    2850 7850
+P 2850 8150
+F 0 "#PWR0105" H 2850 8000 50  0001 C CNN
+F 1 "+3.3V" H 2865 8323 50  0000 C CNN
+F 2 "" H 2850 8150 50  0001 C CNN
+F 3 "" H 2850 8150 50  0001 C CNN
+	1    2850 8150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1916,8 +1618,6 @@ F 3 "" H 1900 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5150 1300 5150 1500
-Wire Wire Line
 	2950 900  3450 900 
 Wire Wire Line
 	2850 8550 2850 8650
@@ -1931,10 +1631,6 @@ Wire Wire Line
 	2500 5900 3150 5900
 Text Label 3150 5900 0    50   ~ 0
 DISP_TX
-Wire Wire Line
-	2500 5200 3150 5200
-Text Label 3150 5200 0    50   ~ 0
-STATUS
 Wire Wire Line
 	2500 6000 3150 6000
 Text Label 3150 6000 0    50   ~ 0
@@ -1959,7 +1655,7 @@ L Device:R R4
 U 1 1 5FBF57DD
 P 8000 5250
 F 0 "R4" V 7793 5250 50  0000 C CNN
-F 1 "10K" V 7884 5250 50  0000 C CNN
+F 1 "3.3k" V 7884 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 5250 50  0001 C CNN
 F 3 "~" H 8000 5250 50  0001 C CNN
 F 4 "RT0805FRE07180RL" V 8000 5250 50  0001 C CNN "Part"
@@ -1971,7 +1667,7 @@ L Device:R R5
 U 1 1 5FC004B4
 P 8350 5250
 F 0 "R5" V 8143 5250 50  0000 C CNN
-F 1 "10K" V 8234 5250 50  0000 C CNN
+F 1 "3.3k" V 8234 5250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8280 5250 50  0001 C CNN
 F 3 "~" H 8350 5250 50  0001 C CNN
 F 4 "RT0805FRE07180RL" V 8350 5250 50  0001 C CNN "Part"
@@ -2000,19 +1696,7 @@ Wire Wire Line
 	7600 5250 7600 4550
 Connection ~ 7600 4550
 Wire Wire Line
-	7600 4550 8000 4550
-$Comp
-L Device:R R3
-U 1 1 5FDB81A5
-P 2850 8000
-F 0 "R3" H 2780 7954 50  0000 R CNN
-F 1 "10K" H 2780 8045 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2780 8000 50  0001 C CNN
-F 3 "~" H 2850 8000 50  0001 C CNN
-F 4 "RC0805FR-07100KL" H 2850 8000 50  0001 C CNN "Part"
-	1    2850 8000
-	-1   0    0    1   
-$EndComp
+	7600 4550 7750 4550
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:2N7002 Q2
 U 1 1 5FE3E266
@@ -2033,10 +1717,6 @@ F 12 "Active" H 5500 5000 60  0001 L CNN "Status"
 	1    5300 3800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13300 5900 13300 950 
-Wire Wire Line
-	13300 950  20650 950 
 Wire Wire Line
 	5000 3900 4850 3900
 Text Label 4850 3900 0    50   ~ 0
@@ -2062,4 +1742,383 @@ Wire Wire Line
 	3750 4750 4300 4750
 Wire Wire Line
 	3750 4550 3750 4750
+$Comp
+L Device:C C10
+U 1 1 5FE5A0DF
+P 9000 2900
+F 0 "C10" H 9115 2946 50  0000 L CNN
+F 1 "10 uF" H 9115 2855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9038 2750 50  0001 C CNN
+F 3 "~" H 9000 2900 50  0001 C CNN
+F 4 "C0805C106K8PACTU‎" H 9000 2900 50  0001 C CNN "Part"
+	1    9000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2450 5850 2450
+Wire Wire Line
+	5950 2550 5850 2550
+Wire Wire Line
+	5850 2550 5850 2450
+Connection ~ 5850 2450
+Wire Wire Line
+	5850 2450 5250 2450
+Wire Wire Line
+	5950 2750 5850 2750
+Wire Wire Line
+	5850 2750 5850 2550
+Connection ~ 5850 2550
+Wire Wire Line
+	7950 3350 8050 3350
+Wire Wire Line
+	8050 3350 8050 3250
+Wire Wire Line
+	8050 3250 7950 3250
+$Comp
+L power:GND #PWR0108
+U 1 1 5FE943B9
+P 5250 2900
+F 0 "#PWR0108" H 5250 2650 50  0001 C CNN
+F 1 "GND" H 5255 2727 50  0000 C CNN
+F 2 "" H 5250 2900 50  0001 C CNN
+F 3 "" H 5250 2900 50  0001 C CNN
+	1    5250 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5FE95224
+P 8200 3450
+F 0 "#PWR0109" H 8200 3200 50  0001 C CNN
+F 1 "GND" H 8205 3277 50  0000 C CNN
+F 2 "" H 8200 3450 50  0001 C CNN
+F 3 "" H 8200 3450 50  0001 C CNN
+	1    8200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2900 5250 2750
+$Comp
+L Device:C C9
+U 1 1 5FE5785C
+P 5250 2600
+F 0 "C9" H 5365 2646 50  0000 L CNN
+F 1 "10 uf" H 5365 2555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5288 2450 50  0001 C CNN
+F 3 "~" H 5250 2600 50  0001 C CNN
+F 4 "C0805C106K8PACTU‎" H 5250 2600 50  0001 C CNN "Part"
+	1    5250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2450 5250 2350
+Connection ~ 5250 2450
+$Comp
+L power:+5V #PWR0110
+U 1 1 5FEAF853
+P 5250 2350
+F 0 "#PWR0110" H 5250 2200 50  0001 C CNN
+F 1 "+5V" H 5265 2523 50  0000 C CNN
+F 2 "" H 5250 2350 50  0001 C CNN
+F 3 "" H 5250 2350 50  0001 C CNN
+	1    5250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5FEBC851
+P 8650 2700
+F 0 "R6" H 8580 2654 50  0000 R CNN
+F 1 "523k" H 8580 2745 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8580 2700 50  0001 C CNN
+F 3 "~" H 8650 2700 50  0001 C CNN
+F 4 "CRCW0805523KFKEA" H 8650 2700 50  0001 C CNN "Part"
+	1    8650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5FEBCD24
+P 8650 3200
+F 0 "R7" H 8580 3154 50  0000 R CNN
+F 1 "169k" H 8580 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8580 3200 50  0001 C CNN
+F 3 "~" H 8650 3200 50  0001 C CNN
+F 4 "CRCW0805169KFKEA" H 8650 3200 50  0001 C CNN "Part"
+	1    8650 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 2450 8650 2550
+Wire Wire Line
+	8650 2850 8650 2900
+Wire Wire Line
+	8650 3350 8650 3450
+Wire Wire Line
+	8650 3450 8200 3450
+Wire Wire Line
+	8050 3350 8050 3450
+Wire Wire Line
+	8050 3450 8200 3450
+Connection ~ 8050 3350
+Connection ~ 8200 3450
+Wire Wire Line
+	7950 3050 8200 3050
+Wire Wire Line
+	8200 3050 8200 3450
+Wire Wire Line
+	7950 2850 8050 2850
+Wire Wire Line
+	8050 2850 8050 2950
+Wire Wire Line
+	8050 2950 8250 2950
+Wire Wire Line
+	8250 2650 8250 2450
+Connection ~ 8250 2450
+Wire Wire Line
+	8250 2450 8650 2450
+Wire Wire Line
+	7950 2450 8250 2450
+Wire Wire Line
+	8350 2650 8350 2900
+Wire Wire Line
+	8350 2900 8650 2900
+Connection ~ 8650 2900
+Wire Wire Line
+	8650 2900 8650 3050
+Wire Wire Line
+	7950 2650 8350 2650
+Wire Wire Line
+	9000 2450 9000 2750
+Connection ~ 8650 2450
+Wire Wire Line
+	9000 3050 9000 3450
+Wire Wire Line
+	9000 3450 8650 3450
+Connection ~ 8650 3450
+Wire Wire Line
+	8650 2450 9000 2450
+Connection ~ 9800 2450
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5FFCB202
+P 9800 2450
+F 0 "#PWR0111" H 9800 2300 50  0001 C CNN
+F 1 "+3V3" H 9815 2623 50  0000 C CNN
+F 2 "" H 9800 2450 50  0001 C CNN
+F 3 "" H 9800 2450 50  0001 C CNN
+	1    9800 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3100 9800 3450
+Wire Wire Line
+	7600 5850 7750 5850
+Wire Wire Line
+	7750 5850 7750 4550
+Connection ~ 7750 4550
+Wire Wire Line
+	7750 4550 8000 4550
+Wire Wire Line
+	8250 2950 8400 2950
+Wire Wire Line
+	8400 2950 8400 3700
+Connection ~ 8250 2950
+$Comp
+L 2020-11-02_17-45-18:1825232-1 SW3
+U 1 1 60075003
+P 2400 2700
+F 0 "SW3" H 3200 3087 60  0000 C CNN
+F 1 "1825232-1" H 3200 2981 60  0000 C CNN
+F 2 "footprints:1825232-1" H 3200 2940 60  0001 C CNN
+F 3 "" H 2400 2700 60  0000 C CNN
+	1    2400 2700
+	1    0    0    -1  
+$EndComp
+Text Label 4000 2800 0    50   ~ 0
+5V_Switch
+$Comp
+L Device:CP C12
+U 1 1 6008F846
+P 9450 2900
+F 0 "C12" H 9475 3000 50  0000 L CNN
+F 1 "220 uF" H 9475 2800 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 9488 2750 50  0001 C CNN
+F 3 "https://www.cde.com/resources/catalogs/AFK.pdf" H 9450 2900 50  0001 C CNN
+F 4 "EEE-HB0J221AP" H 9450 2900 60  0001 C CNN "Part"
+	1    9450 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 2450 9450 2450
+Connection ~ 9000 2450
+Wire Wire Line
+	9450 2750 9450 2450
+Connection ~ 9450 2450
+Wire Wire Line
+	9000 3450 9450 3450
+Connection ~ 9000 3450
+Wire Wire Line
+	9450 3050 9450 3450
+Connection ~ 9450 3450
+Wire Wire Line
+	9450 3450 9800 3450
+Wire Wire Line
+	9800 2450 9700 2450
+Wire Wire Line
+	9450 2450 9800 2450
+$Comp
+L Device:R R8
+U 1 1 60134ADE
+P 9800 2650
+F 0 "R8" H 9730 2604 50  0000 R CNN
+F 1 "8K2" H 9730 2695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9730 2650 50  0001 C CNN
+F 3 "~" H 9800 2650 50  0001 C CNN
+F 4 "RT0805FRE078K2L" H 9800 2650 50  0001 C CNN "Part"
+	1    9800 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 601357E7
+P 9800 2950
+F 0 "D2" V 9839 2833 50  0000 R CNN
+F 1 "3V" V 9748 2833 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 9800 2950 50  0001 C CNN
+F 3 "~" H 9800 2950 50  0001 C CNN
+F 4 "597-6901-607F" V 9800 2950 50  0001 C CNN "Part"
+	1    9800 2950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L eec:TPS82084SILR U2
+U 1 1 5FE52588
+P 5850 2450
+F 0 "U2" H 6950 2715 50  0000 C CNN
+F 1 "TPS82084SILR" H 6950 2624 50  0000 C CNN
+F 2 "footprints:Texas_Instruments-SIL0008C-0-0-MFG" H 5850 2850 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps82084.pdf" H 5850 2950 50  0001 L CNN
+F 4 "No" H 5850 3050 50  0001 L CNN "automotive"
+F 5 "IC" H 5850 3150 50  0001 L CNN "category"
+F 6 "Integrated Circuits (ICs)" H 5850 3250 50  0001 L CNN "device class L1"
+F 7 "Power Management ICs" H 5850 3350 50  0001 L CNN "device class L2"
+F 8 "Voltage Regulators - Switching" H 5850 3450 50  0001 L CNN "device class L3"
+F 9 "DC DC CONVERTER 0.8-6V 2A" H 5850 3550 50  0001 L CNN "digikey description"
+F 10 "296-46279-1-ND" H 5850 3650 50  0001 L CNN "digikey part number"
+F 11 "1.33mm" H 5850 3750 50  0001 L CNN "height"
+F 12 "Yes" H 5850 3850 50  0001 L CNN "lead free"
+F 13 "c04a90c79ffa2d55" H 5850 3950 50  0001 L CNN "library id"
+F 14 "Texas Instruments" H 5850 4050 50  0001 L CNN "manufacturer"
+F 15 "100%" H 5850 4150 50  0001 L CNN "max duty cycle"
+F 16 "+125°C" H 5850 4250 50  0001 L CNN "max junction temp"
+F 17 "6V" H 5850 4350 50  0001 L CNN "max supply voltage"
+F 18 "2.5V" H 5850 4450 50  0001 L CNN "min supply voltage"
+F 19 "2-A, High-Efficiency Step-Down Converter Module with Integrated Inductor 8-uSiP -40 to 125" H 5850 4550 50  0001 L CNN "mouser description"
+F 20 "595-TPS82084SILR" H 5850 4650 50  0001 L CNN "mouser part number"
+F 21 "17uA" H 5850 4750 50  0001 L CNN "nominal supply current"
+F 22 "1" H 5850 4850 50  0001 L CNN "number of outputs"
+F 23 "2A" H 5850 4950 50  0001 L CNN "output current"
+F 24 "AdjustableProgrammable" H 5850 5050 50  0001 L CNN "output type"
+F 25 "0.8-6V" H 5850 5150 50  0001 L CNN "output voltage"
+F 26 "uSiP8" H 5850 5250 50  0001 L CNN "package"
+F 27 "Yes" H 5850 5350 50  0001 L CNN "rohs"
+F 28 "2.4MHz" H 5850 5450 50  0001 L CNN "switching frequency"
+F 29 "Buck" H 5850 5550 50  0001 L CNN "switching topology"
+F 30 "+125°C" H 5850 5650 50  0001 L CNN "temperature range high"
+F 31 "-40°C" H 5850 5750 50  0001 L CNN "temperature range low"
+	1    5850 2450
+	1    0    0    -1  
+$EndComp
+Connection ~ 7100 900 
+$Comp
+L power:GND #PWR0112
+U 1 1 601303FB
+P 7500 1500
+F 0 "#PWR0112" H 7500 1250 50  0001 C CNN
+F 1 "GND" H 7500 1350 50  0000 C CNN
+F 2 "" H 7500 1500 50  0001 C CNN
+F 3 "" H 7500 1500 50  0001 C CNN
+	1    7500 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 900  7500 900 
+Text Label 7200 900  0    50   ~ 0
+5V_Switch
+$Comp
+L Device:R R16
+U 1 1 628AEB8C
+P 7500 1050
+F 0 "R16" H 7430 1004 50  0000 R CNN
+F 1 "8K2" H 7430 1095 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7430 1050 50  0001 C CNN
+F 3 "~" H 7500 1050 50  0001 C CNN
+F 4 "RT0805FRE078K2L" H 7500 1050 50  0001 C CNN "Part"
+	1    7500 1050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 628AEB82
+P 7500 1350
+F 0 "D4" V 7539 1233 50  0000 R CNN
+F 1 "5V" V 7448 1233 50  0000 R CNN
+F 2 "LED_SMD:LED_1206_3216Metric_ReverseMount_Hole1.8x2.4mm" H 7500 1350 50  0001 C CNN
+F 3 "~" H 7500 1350 50  0001 C CNN
+F 4 "597-6901-607F" V 7500 1350 50  0001 C CNN "Part"
+	1    7500 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5FEBB188
+P 8250 2800
+F 0 "R3" H 8180 2754 50  0000 R CNN
+F 1 "499k" H 8180 2845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 8180 2800 50  0001 C CNN
+F 3 "~" H 8250 2800 50  0001 C CNN
+F 4 "CRCW0805499KFKEA" H 8250 2800 50  0001 C CNN "Part"
+	1    8250 2800
+	1    0    0    -1  
+$EndComp
+Text Label 4900 4800 0    50   ~ 0
+DISP_RX
+Text Label 4900 4700 0    50   ~ 0
+DISP_TX
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 601BE443
+P 5250 4800
+F 0 "J3" H 5168 4375 50  0000 C CNN
+F 1 "DISP_SERIAL" H 5168 4466 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5250 4800 50  0001 C CNN
+F 3 "~" H 5250 4800 50  0001 C CNN
+	1    5250 4800
+	1    0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5FE5B2E4
+P 1550 3500
+F 0 "SW2" H 1550 3785 50  0000 C CNN
+F 1 "MODE" H 1550 3694 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 1550 3700 50  0001 C CNN
+F 3 "~" H 1550 3700 50  0001 C CNN
+F 4 "PTS645VK582LFS" H 1550 3500 50  0001 C CNN "Part"
+	1    1550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FE5A985
+P 1550 3100
+F 0 "SW1" H 1550 3385 50  0000 C CNN
+F 1 "RESET" H 1550 3294 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm_H8mm" H 1550 3300 50  0001 C CNN
+F 3 "~" H 1550 3300 50  0001 C CNN
+F 4 "PTS645VK582LFS" H 1550 3100 50  0001 C CNN "Part"
+	1    1550 3100
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

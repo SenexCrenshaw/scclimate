@@ -1,4 +1,5 @@
 (fp_lib_table
   (lib (name ClimateSprinklerController)(type KiCad)(uri ${KIPRJMOD}/ClimateSprinklerController.pretty)(options "")(descr ""))
   (lib (name project)(type KiCad)(uri ${KIPRJMOD}/project.pretty)(options "")(descr ""))
+  (lib (name kicad)(type KiCad)(uri D:/git/senex/kicad/footprints.pretty)(options "")(descr ""))
 )
